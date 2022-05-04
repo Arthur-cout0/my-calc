@@ -6,6 +6,7 @@
 
     --calc-shadow-clr: rgb(200 200 230);
     --btn-shadow-clr: rgb(119, 152, 168);
+    --title-shadow-clr: rgb(134, 172, 185);
 
     --orange: rgb(255, 165, 0);
     --orange-shadow: rgb(190, 124, 0);
@@ -13,6 +14,10 @@
     --green-shadow: rgb(0, 185, 40);
     --blue: rgb(0, 152, 223);
     --blue-shadow: rgb(0, 68, 146);
+    --calc-clr: rgb(231 243 248);
+    --title-clr: rgb(216, 228, 231);
+    --bg-clr: rgb(173, 216, 230);
+    --btn-clr: rgb(139, 194, 212);
 }
 
 *,
@@ -24,7 +29,7 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color: var(--bg-clr);
     display: flex;
     align-items: center;
     height: 100vh;
@@ -35,16 +40,29 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-block: 1rem;
+    padding-block: 2rem;
     justify-content: space-between;
     position: relative;
-    width: min(600px, 40vw);
+    width: min(600px, 60vw);
     aspect-ratio: 4 / 5;
     overflow: hidden;
-    background-color: rgba(255 255 255 / .7);
+    background-color: var(--calc-clr);
     border-radius: 1rem;
     box-shadow: 0 20px 0 var(--calc-shadow-clr);
 }
+
+.title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-family: var(--font-2);
+    font-size: min(1.7rem, 2vw);
+    color: var(--title-clr);
+    text-shadow: 0 -2px 0 var(--calc-shadow-clr);
+}
+
 
 .calc-display-div{
     width: 70%;
@@ -66,10 +84,11 @@ body {
 
 .calc-keyboard{
     width: 70%;
-    height: 75%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: .7rem
 }
 
@@ -86,10 +105,10 @@ body {
     border: none;
     box-shadow: 0 5px 0 var(--btn-shadow-clr);
     border-radius: .7rem;
-    background: rgb(173, 216, 230);
+    background: var(--btn-clr);
     transition: all 100ms linear;
     font-family: var(--font-2);
-    font-size: min(7rem, 4vw);
+    font-size: min(5rem, 8vw);
     color: black;
 }
 
