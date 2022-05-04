@@ -3,6 +3,16 @@
 :root{
     --font-1: 'ZCOOL QingKe HuangYou', cursive;
     --font-2: 'Bebas Neue', cursive;
+
+    --calc-shadow-clr: rgb(200 200 230);
+    --btn-shadow-clr: rgb(119, 152, 168);
+
+    --orange: rgb(255, 165, 0);
+    --orange-shadow: rgb(190, 124, 0);
+    --green: rgb(0, 235, 90);
+    --green-shadow: rgb(0, 185, 40);
+    --blue: rgb(0, 152, 223);
+    --blue-shadow: rgb(0, 68, 146);
 }
 
 *,
@@ -33,7 +43,7 @@ body {
     overflow: hidden;
     background-color: rgba(255 255 255 / .7);
     border-radius: 1rem;
-    box-shadow: 0 20px 0 rgb(200 200 230);
+    box-shadow: 0 20px 0 var(--calc-shadow-clr);
 }
 
 .calc-display-div{
@@ -49,7 +59,7 @@ body {
     background-color: black;
     color: rgb(180 200 0);
     border-radius: .7rem;
-    box-shadow: 0 -5px 0 rgb(200 200 230);
+    box-shadow: 0 -5px 0 var(--calc-shadow-clr);
     font-size: min(7rem, 7vw);
     font-family: var(--font-1);
 }
@@ -74,9 +84,9 @@ body {
     height: 100%;
     width: 25%;
     border: none;
-    box-shadow: 0 5px 0 rgb(150 190 210);
+    box-shadow: 0 5px 0 var(--btn-shadow-clr);
     border-radius: .7rem;
-    background: lightblue;
+    background: rgb(173, 216, 230);
     transition: all 100ms linear;
     font-family: var(--font-2);
     font-size: min(7rem, 4vw);
@@ -90,4 +100,27 @@ body {
 .calc-btn:active{
     box-shadow: none;
     transform: translateY(5px);
+}
+
+#C-btn{
+    background: var(--orange);
+    box-shadow: 0 5px 0 var(--orange-shadow);
+}
+
+#C-btn:active{
+    box-shadow: none;
+}
+
+#equal-btn{
+    background: var(--green);
+    box-shadow: 0 5px 0 var(--green-shadow);
+}
+
+#equal-btn:active{
+    box-shadow: none;
+}
+
+.op-btn{
+    background: var(--blue);
+    box-shadow: 0 5px 0 var(--blue-shadow);
 }
