@@ -43,7 +43,7 @@ body {
     padding-block: 2rem;
     justify-content: space-between;
     position: relative;
-    width: min(600px, 60vw);
+    width: 70vmin;
     aspect-ratio: 4 / 5;
     overflow: hidden;
     background-color: var(--calc-clr);
@@ -58,7 +58,7 @@ body {
     left: 0;
     text-align: center;
     font-family: var(--font-2);
-    font-size: min(1.7rem, 2vw);
+    font-size: 2vmin;
     color: var(--title-clr);
     text-shadow: 0 -2px 0 var(--calc-shadow-clr);
     /* background-color: red; */
@@ -80,7 +80,7 @@ body {
     color: rgb(180 200 0);
     border-radius: .7rem;
     box-shadow: 0 -5px 0 var(--calc-shadow-clr);
-    font-size: min(7rem, 7vw);
+    font-size: 10vmin;
     font-family: var(--font-1);
 }
 
@@ -110,7 +110,7 @@ body {
     background: var(--btn-clr);
     transition: all 100ms linear;
     font-family: var(--font-2);
-    font-size: min(5rem, 8vw);
+    font-size: 7vmin;
     color: black;
 }
 
